@@ -1,0 +1,29 @@
+BootStrap: docker
+From: quay.io/biocontainers/bowtie2:2.4.1--py36h7f0b59b_2
+
+%apprun bowtie2
+  exec bowtie2 "${@}"
+
+%apprun bowtie2-build
+  exec bowtie2-build "${@}"
+
+%apprun bowtie2-inspect
+  exec bowtie2-inspect "${@}"
+
+%apprun bowtie2-align-s
+  exec bowtie2-align-s "${@}"
+
+%apprun bowtie2-build-l
+  exec bowtie2-build-l "${@}"
+
+%apprun bowtie2-inspect-s
+  exec bowtie2-inspect-s "${@}"
+
+%apprun bowtie2-align-l
+  exec bowtie2-align-l "${@}"
+
+%apprun bowtie2-build-s
+  exec bowtie2-build-s "${@}"
+
+%apprun bowtie2-inspect-l
+  exec bowtie2-inspect-l "${@}"
